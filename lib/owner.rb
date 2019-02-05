@@ -39,15 +39,15 @@ class Owner
   end
 
   def walk_dogs
-
+    pets{:dogs}.map {|doggie| doggie.mood = "happy"}
   end
 
   def play_with_cats
-
+    pets{:cats}.map {|meow| meow.mood = "happy"}
   end
 
   def feed_fish
-
+    pets{:fishes}.map {|bubbles| bubbles.mood = "happy"}
   end
 
   def sell_pets
