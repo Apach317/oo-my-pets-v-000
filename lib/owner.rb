@@ -4,11 +4,11 @@ class Owner
   attr_reader :species
   @@all = []
   def species
-
+     
   end
 
   def self.all
-    @@all
+    @@all << Owner.new
   end
 
   def say_species
@@ -52,6 +52,10 @@ class Owner
   end
 
   def list_pets
+
+  end
+
+  def self.reset_all
 
   end
 end
